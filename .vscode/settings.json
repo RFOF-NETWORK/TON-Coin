@@ -1,5 +1,7 @@
 {
   "ton.acton.linter.enabled": true,
   "ton.tolk.formatter.useFormatter": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "js/ts.format.insertSpaceBeforeFunctionParenthesis": true,
+  "js/ts.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
 }
