@@ -77,6 +77,21 @@ export function App() {
         <h2>Project status</h2>
         <p>The Jetton contracts are an unaudited starter and are not integrated into this app. Staking, mining, and autonomous agent transactions are not implemented.</p>
       </section>
+      <section>
+        <h2>TON-Connect &amp; Acton resources</h2>
+        <p>Install the TON Connect MCP skill in your development environment:</p>
+        <pre><code>npx skills add ton-connect/kit/packages/mcp</code></pre>
+        <p>Install the Acton CLI on Linux or macOS:</p>
+        <pre><code>curl -LsSf https://github.com/ton-blockchain/acton/releases/latest/download/acton-installer.sh | sh</code></pre>
+        <p>
+          <a href="https://agents.ton.org/getting-started#create-wallet" target="_blank" rel="noreferrer">Create a TON wallet</a>
+          {' · '}
+          <a href="https://ton-blockchain.github.io/acton/" target="_blank" rel="noreferrer">Acton documentation</a>
+          {' · '}
+          <a href="https://github.com/ton-connect/kit/tree/main/packages/mcp" target="_blank" rel="noreferrer">TON Connect MCP</a>
+        </p>
+        <p className="notice">Review downloaded skills before use; they run with full agent permissions. The reference wallet address above is informational only.</p>
+      </section>
     </main>
   );
 }

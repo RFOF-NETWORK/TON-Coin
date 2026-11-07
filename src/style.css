@@ -14,3 +14,5 @@ input, select, button { font: inherit; padding: .7rem; border: 1px solid #aebdca
 button { background: #087ac4; color: white; cursor: pointer; }
 button:disabled { opacity: .5; cursor: not-allowed; }
 .address { font-family: monospace; }
+pre { overflow-x: auto; padding: 1rem; border-radius: 6px; background: #172534; color: white; }
+a { color: #087ac4; }
