@@ -1,7 +1,8 @@
-import { useState, type FormEvent } from 'react';
+import { lazy, Suspense, useState, type FormEvent } from 'react';
 import { TonConnectButton, useTonAddress, useTonConnectUI, useTonWallet } from '@tonconnect/ui-react';
 import { prepareTransfer, type Network } from './transfer';
-import { Swap } from './Swap';
+
+const Swap = lazy(() => import('./Swap').then(({ Swap }) => ({ default: Swap })));
 
 const DEVELOPER_ADDRESS = 'UQDk-1Gqc4YIC22LTAAZLxomhkyp-V52B0yaeHgmk3t9Lli6';
 
@@ -72,7 +73,7 @@ export function App() {
         </form>
         <p role="status" aria-live="polite">{status}</p>
       </section>
-      {import.meta.env.VITE_ENABLE_EXPERIMENTAL_SWAPS === 'true' && <Swap />}
+      {import.meta.env.VITE_ENABLE_EXPERIMENTAL_SWAPS === 'true' && <Suspense fallback={<section><p>Loading swap interface...</p></section>}><Swap /></Suspense>}
       <section>
         <h2>Project status</h2>
         <p>The Jetton contracts are an unaudited starter and are not integrated into this app. Staking, mining, and autonomous agent transactions are not implemented.</p>
