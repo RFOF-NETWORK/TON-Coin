@@ -1,0 +1,21 @@
+
+# Acton related files
+.acton/
+.studio/
+gen/
+build/
+lcov.info
+libraries.toml
+global.libraries.toml
+
+# Mnemonic and wallet files
+.env
+*.mnemonic
+wallets.toml
+global.wallets.toml
+
+node_modules/
+dist/
+coverage/
+.env.*
+!.env.example

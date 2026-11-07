@@ -1,0 +1,6 @@
+{
+  "name": "TON-Coin",
+  "symbol": "TONC",
+  "description": "Experimental TON-Coin jetton",
+  "decimals": "9"
+}
