@@ -11,17 +11,21 @@ export default defineConfig(({ mode, command }) => {
     throw new Error('Set VITE_APP_URL to the public HTTPS origin of the app');
   }
   if (
-    url.origin !== appUrl ||
+    url.href.replace(/\/$/, '') !== appUrl ||
+    url.search !== '' ||
+    url.hash !== '' ||
     (url.protocol !== 'https:' && !(command === 'serve' && url.hostname === 'localhost' && url.protocol === 'http:'))
   ) {
-    throw new Error('VITE_APP_URL must be an HTTPS origin without a trailing slash');
+    throw new Error('VITE_APP_URL must be an HTTPS app URL without a trailing slash');
   }
+  const base = url.pathname === '/' ? '/' : `${url.pathname.replace(/\/+$/, '')}/`;
   const manifest = JSON.stringify({
     url: appUrl,
     name: 'TON-Coin',
     iconUrl: `${appUrl}/icon.png`,
   });
   return {
+    base,
     plugins: [
       react(),
       {

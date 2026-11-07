@@ -19,10 +19,13 @@ public HTTPS URL of the deployed app. For local development the default is
 ```sh
 npm ci
 npm run dev
-# Production build: use the exact public origin, without a trailing slash.
+# Production build: use the full public app URL, without a trailing slash.
 VITE_APP_URL=https://your-domain.example npm run build
 npm test
 ```
+
+GitHub Pages builds and deploys this app from the `main` branch to
+`https://rfof-network.github.io/TON-Coin/`.
 
 Open the configured URL, connect a wallet, and select the wallet's network in
 the transfer form. A wallet confirmation is required for every transfer. The
