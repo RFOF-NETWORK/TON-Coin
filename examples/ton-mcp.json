@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ton": {
+      "command": "npx",
+      "args": ["-y", "@ton/mcp@0.1.15-alpha.23"],
+      "env": {
+        "NETWORK": "testnet"
+      }
+    }
+  }
+}

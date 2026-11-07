@@ -1,0 +1,817 @@
+{
+  "timestamp": 1794010957,
+  "opcodes": {
+    "AskToBurn": {
+      "min_gas": 1159,
+      "max_gas": 4254,
+      "avg_gas": 2847,
+      "samples": 11,
+      "all_values": [
+        4254,
+        1159,
+        1159,
+        4254,
+        1159,
+        4254,
+        4254,
+        1159,
+        4254,
+        4254,
+        1159
+      ]
+    },
+    "BurnNotificationForMinter": {
+      "min_gas": 4063,
+      "max_gas": 4063,
+      "avg_gas": 4063,
+      "samples": 6,
+      "all_values": [
+        4063,
+        4063,
+        4063,
+        4063,
+        4063,
+        4063
+      ]
+    },
+    "TopUpGrams": {
+      "min_gas": 1189,
+      "max_gas": 1189,
+      "avg_gas": 1189,
+      "samples": 12,
+      "all_values": [
+        1189,
+        1189,
+        1189,
+        1189,
+        1189,
+        1189,
+        1189,
+        1189,
+        1189,
+        1189,
+        1189,
+        1189
+      ]
+    },
+    "ReturnExcessesBack": {
+      "min_gas": 128,
+      "max_gas": 1291,
+      "avg_gas": 1202,
+      "samples": 13,
+      "all_values": [
+        1291,
+        1291,
+        1291,
+        1291,
+        1291,
+        1291,
+        1291,
+        1291,
+        1291,
+        128,
+        1291,
+        1291,
+        1291
+      ]
+    },
+    "AskToTransfer": {
+      "min_gas": 309,
+      "max_gas": 6327,
+      "avg_gas": 3740,
+      "samples": 14,
+      "all_values": [
+        6327,
+        2012,
+        6327,
+        2012,
+        2012,
+        309,
+        2012,
+        6327,
+        2012,
+        6327,
+        2012,
+        6327,
+        6327,
+        2012
+      ]
+    },
+    "InternalTransferStep": {
+      "min_gas": 5380,
+      "max_gas": 7440,
+      "avg_gas": 6502,
+      "samples": 18,
+      "all_values": [
+        6204,
+        6204,
+        6204,
+        5380,
+        6204,
+        7440,
+        6204,
+        6204,
+        7440,
+        6204,
+        6204,
+        6204,
+        6204,
+        6204,
+        7440,
+        6204,
+        7440,
+        7440
+      ]
+    },
+    "TransferNotificationForRecipient": {
+      "min_gas": 309,
+      "max_gas": 309,
+      "avg_gas": 309,
+      "samples": 12,
+      "all_values": [
+        309,
+        309,
+        309,
+        309,
+        309,
+        309,
+        309,
+        309,
+        309,
+        309,
+        309,
+        309
+      ]
+    },
+    "MintNewJettons": {
+      "min_gas": 6472,
+      "max_gas": 6472,
+      "avg_gas": 6472,
+      "samples": 12,
+      "all_values": [
+        6472,
+        6472,
+        6472,
+        6472,
+        6472,
+        6472,
+        6472,
+        6472,
+        6472,
+        6472,
+        6472,
+        6472
+      ]
+    }
+  },
+  "trace_chains": {
+    "test gas: wallet storage fee should be measurable::trace#2": {
+      "test_name": "test gas: wallet storage fee should be measurable",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: burn gas fee should follow config::trace#1": {
+      "test_name": "test gas: burn gas fee should follow config",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: burn custom payload should not affect minimal value::trace#5": {
+      "test_name": "test gas: burn custom payload should not affect minimal value",
+      "trace_name": "Trace 5",
+      "tx_count": 2,
+      "total_gas_used": 8317,
+      "total_gas_fees": 554469,
+      "total_forward_fees": 157648,
+      "total_fees": 593179
+    },
+    "test gas: transfer with forward amount requires second forward fee::trace#5": {
+      "test_name": "test gas: transfer with forward amount requires second forward fee",
+      "trace_name": "Trace 5",
+      "tx_count": 1,
+      "total_gas_used": 2012,
+      "total_gas_fees": 134134,
+      "total_forward_fees": 89247,
+      "total_fees": 134134
+    },
+    "test gas: burn forward fee should follow config::trace#2": {
+      "test_name": "test gas: burn forward fee should follow config",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: transfer with forward amount requires second forward fee::trace#4": {
+      "test_name": "test gas: transfer with forward amount requires second forward fee",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: burn minimal value edge::trace#6": {
+      "test_name": "test gas: burn minimal value edge",
+      "trace_name": "Trace 6",
+      "tx_count": 1,
+      "total_gas_used": 1159,
+      "total_gas_fees": 77268,
+      "total_forward_fees": 65602,
+      "total_fees": 77268
+    },
+    "test gas: burn forward fee should follow config::trace#5": {
+      "test_name": "test gas: burn forward fee should follow config",
+      "trace_name": "Trace 5",
+      "tx_count": 2,
+      "total_gas_used": 8317,
+      "total_gas_fees": 554469,
+      "total_forward_fees": 143026,
+      "total_fees": 593179
+    },
+    "test gas: forward GRAM transfer should fail when fees are insufficient::trace#3": {
+      "test_name": "test gas: forward GRAM transfer should fail when fees are insufficient",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: burn minimal value edge::trace#1": {
+      "test_name": "test gas: burn minimal value edge",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: burn should fail when sent grams are clearly insufficient::trace#4": {
+      "test_name": "test gas: burn should fail when sent grams are clearly insufficient",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 567697,
+      "total_fees": 1190311
+    },
+    "test gas: transfer with forward amount requires second forward fee::trace#2": {
+      "test_name": "test gas: transfer with forward amount requires second forward fee",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: burn gas fee should follow config::trace#5": {
+      "test_name": "test gas: burn gas fee should follow config",
+      "trace_name": "Trace 5",
+      "tx_count": 2,
+      "total_gas_used": 8317,
+      "total_gas_fees": 554469,
+      "total_forward_fees": 143026,
+      "total_fees": 593179
+    },
+    "test gas: burn should fail when sent grams are clearly insufficient::trace#3": {
+      "test_name": "test gas: burn should fail when sent grams are clearly insufficient",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: transfer storage fee should follow config::trace#6": {
+      "test_name": "test gas: transfer storage fee should follow config",
+      "trace_name": "Trace 6",
+      "tx_count": 1,
+      "total_gas_used": 2012,
+      "total_gas_fees": 134134,
+      "total_forward_fees": 89247,
+      "total_fees": 134134
+    },
+    "test gas: transfer with forward amount requires second forward fee::trace#6": {
+      "test_name": "test gas: transfer with forward amount requires second forward fee",
+      "trace_name": "Trace 6",
+      "tx_count": 3,
+      "total_gas_used": 13767,
+      "total_gas_fees": 917802,
+      "total_forward_fees": 563653,
+      "total_fees": 1154998
+    },
+    "test gas: burn custom payload should not affect minimal value::trace#1": {
+      "test_name": "test gas: burn custom payload should not affect minimal value",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: transfer storage fee should follow config::trace#4": {
+      "test_name": "test gas: transfer storage fee should follow config",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: burn custom payload should not affect minimal value::trace#6": {
+      "test_name": "test gas: burn custom payload should not affect minimal value",
+      "trace_name": "Trace 6",
+      "tx_count": 1,
+      "total_gas_used": 1159,
+      "total_gas_fees": 77268,
+      "total_forward_fees": 80224,
+      "total_fees": 77268
+    },
+    "test gas: burn custom payload should not affect minimal value::trace#4": {
+      "test_name": "test gas: burn custom payload should not affect minimal value",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: transfer minimal value edge::trace#3": {
+      "test_name": "test gas: transfer minimal value edge",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: transfer with forward amount requires second forward fee::trace#3": {
+      "test_name": "test gas: transfer with forward amount requires second forward fee",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: transfer storage fee should follow config::trace#3": {
+      "test_name": "test gas: transfer storage fee should follow config",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: transfer storage fee should follow config::trace#1": {
+      "test_name": "test gas: transfer storage fee should follow config",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: burn should fail when sent grams are clearly insufficient::trace#1": {
+      "test_name": "test gas: burn should fail when sent grams are clearly insufficient",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: burn minimal value edge::trace#4": {
+      "test_name": "test gas: burn minimal value edge",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: burn gas fee should follow config::trace#3": {
+      "test_name": "test gas: burn gas fee should follow config",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: burn forward fee should follow config::trace#3": {
+      "test_name": "test gas: burn forward fee should follow config",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: burn forward fee should follow config::trace#1": {
+      "test_name": "test gas: burn forward fee should follow config",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: transfer forward fees should follow config::trace#3": {
+      "test_name": "test gas: transfer forward fees should follow config",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: burn gas fee should follow config::trace#4": {
+      "test_name": "test gas: burn gas fee should follow config",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: burn should fail when sent grams are clearly insufficient::trace#5": {
+      "test_name": "test gas: burn should fail when sent grams are clearly insufficient",
+      "trace_name": "Trace 5",
+      "tx_count": 1,
+      "total_gas_used": 1159,
+      "total_gas_fees": 77268,
+      "total_forward_fees": 66668,
+      "total_fees": 77268
+    },
+    "test gas: transfer storage fee should follow config::trace#2": {
+      "test_name": "test gas: transfer storage fee should follow config",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: burn should fail when sent grams are clearly insufficient::trace#2": {
+      "test_name": "test gas: burn should fail when sent grams are clearly insufficient",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: transfer forward fees should follow config::trace#4": {
+      "test_name": "test gas: transfer forward fees should follow config",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: forward GRAM transfer should fail when fees are insufficient::trace#1": {
+      "test_name": "test gas: forward GRAM transfer should fail when fees are insufficient",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: transfer gas fee should follow config::trace#5": {
+      "test_name": "test gas: transfer gas fee should follow config",
+      "trace_name": "Trace 5",
+      "tx_count": 4,
+      "total_gas_used": 13767,
+      "total_gas_fees": 2726736,
+      "total_forward_fees": 608099,
+      "total_fees": 2986153
+    },
+    "test gas: transfer minimal value edge::trace#2": {
+      "test_name": "test gas: transfer minimal value edge",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: transfer storage fee should follow config::trace#5": {
+      "test_name": "test gas: transfer storage fee should follow config",
+      "trace_name": "Trace 5",
+      "tx_count": 4,
+      "total_gas_used": 13767,
+      "total_gas_fees": 917802,
+      "total_forward_fees": 608099,
+      "total_fees": 1177219
+    },
+    "test gas: transfer minimal value edge::trace#1": {
+      "test_name": "test gas: transfer minimal value edge",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: transfer forward fees should follow config::trace#1": {
+      "test_name": "test gas: transfer forward fees should follow config",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: burn minimal value edge::trace#2": {
+      "test_name": "test gas: burn minimal value edge",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: forward GRAM transfer should fail when fees are insufficient::trace#5": {
+      "test_name": "test gas: forward GRAM transfer should fail when fees are insufficient",
+      "trace_name": "Trace 5",
+      "tx_count": 2,
+      "total_gas_used": 2321,
+      "total_gas_fees": 154735,
+      "total_forward_fees": 124626,
+      "total_fees": 176956
+    },
+    "test gas: transfer gas fee should follow config::trace#6": {
+      "test_name": "test gas: transfer gas fee should follow config",
+      "trace_name": "Trace 6",
+      "tx_count": 1,
+      "total_gas_used": 2012,
+      "total_gas_fees": 389068,
+      "total_forward_fees": 89247,
+      "total_fees": 389068
+    },
+    "test gas: transfer forward fees should follow config::trace#2": {
+      "test_name": "test gas: transfer forward fees should follow config",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: transfer minimal value edge::trace#6": {
+      "test_name": "test gas: transfer minimal value edge",
+      "trace_name": "Trace 6",
+      "tx_count": 1,
+      "total_gas_used": 2012,
+      "total_gas_fees": 134134,
+      "total_forward_fees": 77690,
+      "total_fees": 134134
+    },
+    "test gas: forward GRAM transfer should fail when fees are insufficient::trace#4": {
+      "test_name": "test gas: forward GRAM transfer should fail when fees are insufficient",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 567697,
+      "total_fees": 1190311
+    },
+    "test gas: burn forward fee should follow config::trace#4": {
+      "test_name": "test gas: burn forward fee should follow config",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: transfer gas fee should follow config::trace#4": {
+      "test_name": "test gas: transfer gas fee should follow config",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: burn minimal value edge::trace#5": {
+      "test_name": "test gas: burn minimal value edge",
+      "trace_name": "Trace 5",
+      "tx_count": 2,
+      "total_gas_used": 8317,
+      "total_gas_fees": 554469,
+      "total_forward_fees": 143026,
+      "total_fees": 593179
+    },
+    "test gas: transfer gas fee should follow config::trace#1": {
+      "test_name": "test gas: transfer gas fee should follow config",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: transfer forward fees should follow config::trace#6": {
+      "test_name": "test gas: transfer forward fees should follow config",
+      "trace_name": "Trace 6",
+      "tx_count": 4,
+      "total_gas_used": 13767,
+      "total_gas_fees": 917802,
+      "total_forward_fees": 4480928,
+      "total_fees": 2911993
+    },
+    "test gas: wallet storage fee should be measurable::trace#1": {
+      "test_name": "test gas: wallet storage fee should be measurable",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: burn custom payload should not affect minimal value::trace#2": {
+      "test_name": "test gas: burn custom payload should not affect minimal value",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: wallet storage fee should be measurable::trace#4": {
+      "test_name": "test gas: wallet storage fee should be measurable",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 567697,
+      "total_fees": 1190311
+    },
+    "test gas: burn forward fee should follow config::trace#6": {
+      "test_name": "test gas: burn forward fee should follow config",
+      "trace_name": "Trace 6",
+      "tx_count": 3,
+      "total_gas_used": 8445,
+      "total_gas_fees": 563003,
+      "total_forward_fees": 674675,
+      "total_fees": 772332
+    },
+    "test gas: transfer gas fee should follow config::trace#3": {
+      "test_name": "test gas: transfer gas fee should follow config",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: burn gas fee should follow config::trace#7": {
+      "test_name": "test gas: burn gas fee should follow config",
+      "trace_name": "Trace 7",
+      "tx_count": 1,
+      "total_gas_used": 1159,
+      "total_gas_fees": 218468,
+      "total_forward_fees": 65602,
+      "total_fees": 218468
+    },
+    "test gas: burn custom payload should not affect minimal value::trace#3": {
+      "test_name": "test gas: burn custom payload should not affect minimal value",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: burn forward fee should follow config::trace#7": {
+      "test_name": "test gas: burn forward fee should follow config",
+      "trace_name": "Trace 7",
+      "tx_count": 1,
+      "total_gas_used": 1159,
+      "total_gas_fees": 77268,
+      "total_forward_fees": 256003,
+      "total_fees": 77268
+    },
+    "test gas: forward GRAM transfer should fail when fees are insufficient::trace#2": {
+      "test_name": "test gas: forward GRAM transfer should fail when fees are insufficient",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: transfer minimal value edge::trace#4": {
+      "test_name": "test gas: transfer minimal value edge",
+      "trace_name": "Trace 4",
+      "tx_count": 4,
+      "total_gas_used": 14276,
+      "total_gas_fees": 951738,
+      "total_forward_fees": 568765,
+      "total_fees": 1190667
+    },
+    "test gas: transfer gas fee should follow config::trace#2": {
+      "test_name": "test gas: transfer gas fee should follow config",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: transfer minimal value edge::trace#5": {
+      "test_name": "test gas: transfer minimal value edge",
+      "trace_name": "Trace 5",
+      "tx_count": 2,
+      "total_gas_used": 11707,
+      "total_gas_fees": 780469,
+      "total_forward_fees": 464805,
+      "total_fees": 974022
+    },
+    "test gas: transfer with forward amount requires second forward fee::trace#1": {
+      "test_name": "test gas: transfer with forward amount requires second forward fee",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 89869,
+      "total_fees": 20601
+    },
+    "test gas: transfer with forward amount requires second forward fee::trace#7": {
+      "test_name": "test gas: transfer with forward amount requires second forward fee",
+      "trace_name": "Trace 7",
+      "tx_count": 1,
+      "total_gas_used": 2012,
+      "total_gas_fees": 134134,
+      "total_forward_fees": 89247,
+      "total_fees": 134134
+    },
+    "test gas: burn gas fee should follow config::trace#2": {
+      "test_name": "test gas: burn gas fee should follow config",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 90935,
+      "total_fees": 20601
+    },
+    "test gas: burn minimal value edge::trace#3": {
+      "test_name": "test gas: burn minimal value edge",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: transfer forward fees should follow config::trace#5": {
+      "test_name": "test gas: transfer forward fees should follow config",
+      "trace_name": "Trace 5",
+      "tx_count": 4,
+      "total_gas_used": 13767,
+      "total_gas_fees": 917802,
+      "total_forward_fees": 4480928,
+      "total_fees": 2911993
+    },
+    "test gas: transfer forward fees should follow config::trace#7": {
+      "test_name": "test gas: transfer forward fees should follow config",
+      "trace_name": "Trace 7",
+      "tx_count": 1,
+      "total_gas_used": 2012,
+      "total_gas_fees": 134134,
+      "total_forward_fees": 492450,
+      "total_fees": 134134
+    },
+    "test gas: wallet storage fee should be measurable::trace#3": {
+      "test_name": "test gas: wallet storage fee should be measurable",
+      "trace_name": "Trace 3",
+      "tx_count": 1,
+      "total_gas_used": 1189,
+      "total_gas_fees": 79268,
+      "total_forward_fees": 732673,
+      "total_fees": 79268
+    },
+    "test gas: burn gas fee should follow config::trace#6": {
+      "test_name": "test gas: burn gas fee should follow config",
+      "trace_name": "Trace 6",
+      "tx_count": 2,
+      "total_gas_used": 8317,
+      "total_gas_fees": 1636736,
+      "total_forward_fees": 143026,
+      "total_fees": 1675446
+    }
+  }
+}

@@ -1,0 +1,42 @@
+name: Contracts
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: ton-blockchain/setup-acton@0f9f436843d740466cae2d7411ff59072dde942e # v1.2.0
+        with:
+          version: 1.2.1
+      - run: acton init --stdlib-only
+      - run: acton build
+      - run: acton fmt --check
+      - run: acton check --output-format github
+      - run: acton test --fuzz-seed 42 --coverage --coverage-format lcov
+      - run: acton test tests/gas.test.tolk --baseline-snapshot benchmarks/jetton-gas.json --fail-on-diff
+      - uses: actions/upload-artifact@v4
+        with:
+          name: contract-coverage
+          path: lcov.info
+
+  mutation:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: ton-blockchain/setup-acton@0f9f436843d740466cae2d7411ff59072dde942e # v1.2.0
+        with:
+          version: 1.2.1
+      - run: acton init --stdlib-only
+      - run: acton test --mutate --mutate-contract JettonMinter --mutation-levels critical --mutation-workers 2 --mutation-minimum-percent 70

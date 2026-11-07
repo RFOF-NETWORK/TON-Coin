@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Acton: test UI",
+      "type": "process",
+      "command": "acton",
+      "args": ["test", "--ui", "--show-bodies"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Acton: tests with backtrace",
+      "type": "process",
+      "command": "acton",
+      "args": ["test", "--backtrace", "full"],
+      "problemMatcher": []
+    }
+  ]
+}

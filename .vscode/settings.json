@@ -1,0 +1,5 @@
+{
+  "ton.acton.linter.enabled": true,
+  "ton.tolk.formatter.useFormatter": true,
+  "editor.formatOnSave": true
+}
