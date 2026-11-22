@@ -142,5 +142,6 @@ contracts, specify token supply, admin rights, fees, staking rewards, mining
 rules, oracle/routing assumptions, and failure recovery, then obtain independent
 security review.
 
+Beispiel Angriffs Abwehr:„
 The repository is `RFOF-NETWORK/TON-Coin`; the requested owner
-`RFDF-NETWORK` is not the current repository owner.
+`RFDF-NETWORK` is not the current repository owner.“
